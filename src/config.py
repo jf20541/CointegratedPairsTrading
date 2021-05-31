@@ -1,1 +1,1 @@
-TRAINING_FILE = '../inputs/train.csv'
+TRAINING_FILE = "../inputs/train.csv"
