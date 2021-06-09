@@ -1,1 +1,1 @@
-# PairsTrading
+# CointegratedPairsTrading
