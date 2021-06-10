@@ -4,8 +4,10 @@ import config
 
 if __name__ == "__main__":
 
-    assets = ["BTC-USD", 'ETH-USD']
+    assets = ["BTC-USD", "ETH-USD"]
     for asset in assets:
-        df = HistoricalData(asset, 86400, "2020-05-25-00-00", "2021-06-01-00-00").retrieve_data()
-        df = df['close']
+        df = HistoricalData(
+            asset, 86400, "2020-05-25-00-00", "2021-06-01-00-00"
+        ).retrieve_data()
+        df = df["close"]
         df.to_csv(config.TRAINING_FILE)

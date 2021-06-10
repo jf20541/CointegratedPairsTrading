@@ -5,6 +5,7 @@ import pandas as pd
 
 df = pd.read_csv(config.TRAINING_FILE)
 
+
 def plot_pr(data):
     price_ratio = df["ETH"] / df["BTC"]
     price_ratio.plot(figsize=(15, 8))
@@ -16,5 +17,6 @@ def plot_pr(data):
     plt.savefig("../plots/CoinPR.jpg")
     plt.show()
     print(f"Average Price-Ratio: {price_ratio.mean():.4f}")
+
 
 plot_pr()
