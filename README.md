@@ -6,7 +6,6 @@ Use the Engle-Granger Test: Method for checking if two series are cointegrated
 2. Calculate spread and check if the spread is stationary (if the spread is stationary, the two series are cointegrated)
 3. Augmented Dickey-Fuller Test, if P-value <=0.05: assume spread is stationary and therefore two stocks are cointegrated
 
-
 ### Steps to verify Mean Reversion 
 1.	Pair of assets that have some economic link
 2.	Compute the hedge ratio
@@ -24,15 +23,6 @@ Created 4 modules
 - `data.py`: Collect historical price data for Bitcoin and Ethereum
 - `plot.py`: Plot ETH/BTC price-ratio
 
-### Install
-Install the following Python libraries
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [Scikit-Learn](https://scikit-learn.org/stable/)
-- [Statsmodel](https://www.statsmodels.org/stable/index.html)
-- [Historic-Crypto](https://pypi.org/project/Historic-Crypto/)
-
-
 ### Run
 In a terminal or command window, navigate to the top-level project directory `CointegratedPairsTrading/` (that contains this README) and run the following command:
 ```bash
@@ -43,5 +33,3 @@ pip install --upgrade pip && pip install -r requirements.txt
 [Collecting Coinbase API](https://developers.coinbase.com/)
 - `BTCUSD`: Bitcoin
 - `ETHUSD`: Ethereum 
-
-### Sources
