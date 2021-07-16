@@ -4,7 +4,7 @@
 Use the Engle-Granger Test: Method for checking if Bitcoin (BTC) and Ethereum (ETH) two series are cointegrated
 1. Get hedge ratio from linear regression 
 2. Calculate spread and check if the spread is stationary (if the spread is stationary, the two series are cointegrated)
-3. Augmented Dickey-Fuller Test, if P-value <=0.05: assume spread is stationary and therefore two stocks are cointegrated
+3. Augmented Dickey-Fuller Test, if P-value <=0.05: assume spread is stationary and therefore two time-series are cointegrated
 
 ## Steps for Mean Reversion 
 1.	Pair of assets that have some economic link
