@@ -11,8 +11,12 @@ BTC = df["BTC"].values.reshape(-1, 1)
 
 
 def hedge_ratio(dv, iv):
-    """
-    Calculating Hedge Ratio from LinearRegression Model (Slope)
+    """Hedge Ratio is the proportion that lets us create a neutral position
+    Args:
+        dv [float-array]: BTC price
+        iv [float-array]: ETH price
+    Returns:
+        [float-array]: calculated Hedge Ratio from LinearRegression  (Slope)
     """
     lr = LinearRegression()
     lr.fit(dv, iv)
